@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prix-bas</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-100">
+    <header class=" bg-gray-200 md:bg-blue-300 lg:bg-gray-900 lg:text-white text-black w-full">
+     <div class="grid grid-cols-2">
+        <img src="images/logo/logo_color.png" class="text-left rounded-full mx-8  " alt="">
+        <p class="text-right mr-4 text-[13px] font-semibold text-right md:hidden">Tout vos besoins a Petit prix dans la
+            metropole lilloise
+        </p>
+        <div class="text-right hidden md:block mr-4">
+            <ul class="flex gap-8 text-[15px] ml-4 md:text-[15px] mt-2 ">
+                <li class="space-between"><a href="#">
+                        <span class="bg-orange-500 text-white rounded-full mx-2 px-3 p-2">1</span> Choix et Commandes
+                        des articles </a>
+                </li>
+                <li class="space-between"><a href="#">
+                        <span class="bg-orange-500 text-white rounded-full mx-2 px-3 p-2">2</span> Retrait
+                        des articles </a>
+                </li>
+                <li class="space-between"><a href="#">
+                        <span class="bg-orange-500 text-white rounded-full mx-2 px-3 p-2">3</span> Paiement
+                        des articles </a>
+                </li>
+
+            </ul>
+        </div>
+     </div>
+    </header>
+    <nav>
+                  
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-4 mx-4 mt-2 ">
+           <div class=""> 
+               <input type="text" placeholder="Rechercher "
+                class="rounded-lg w-full mr-4 border-2 p-1 lg:p-2 lg:mt-2">
+           </div>
+           <div class=""> 
+               <ul class="flex gap-10 md:text-[25px] lg:text-[35px] mx-auto text-[25px] text-gray-900">
+                   <li class=""><i class="fa fa-bars  "></i></li>
+                   <li class=""><i class="fa fa-desktop  "></i></li>
+                   <li class=""><i class="fa fa-football  "></i></li>
+                   <li class=""><i class="fa fa-user  "></i></li>
+                   <li class="" id="inputSerachButton"><i class="fa fa-search  "></i></li>
+                   <li class=""><i class="fa fa-cart-shopping  "></i></li>
+               </ul>
+           </div>
+       </div>
+    
+ 
+</nav> 
+      
+       </section>
+
+      <!-- ********** section filtre ************* -->
+      <section class="mt-4 md:mx-10 mx-4 md:mx-[100px] ">
+        <button id="buttonOpenFiltre" class=" md:hidden text-blue-600 flex gap-2 ">
+          <i class="fa fa-sliders text-right pb-4 "></i> <span>Plus De Filtres</span> 
+        </button>
+        <button id="buttonCloseFiltre" class="md:hidden text-blue-600 grid grid-cols-1 hidden">
+           <i class="fa fa-sliders text-right pb-4 "></i> <span>Moins De Filtres</span> 
+         </button>
+   
+        <div class="grid cols-1 hidden " >
+          
+        </div>
+       </section>
+       <!-- ******** end section filtre ********* -->
+       
+       <!-- ************************************** -->
+       <!-- ********   division de page ********** -->
+       <!-- ************************************** -->
+    <section id="contentPage" class="md:flex">
+        <div class="md:w-1/6 md:mx-2 hidden md:block bg-white" id="contentFiltre">
+            <div class="grid grid-cols-1">
+                <ul class="grid grid-cols-3 md:grid-cols-1 mr-4 pr-4  md:text-sm md:gap-4 lg:text-2xl">
+                    <li>  
+                        <div>
+                            <input type="checkbox" id="mutimedia" name="mutimedia"  />
+                            <label for="mutimedia">Multimedia</label>
+                        </div>
+                    </li>
+                    <li>  
+                        <div>
+                            <input type="checkbox" id="cuisine" name="cuisine"  />
+                            <label for="cuisine">Cuisine</label>
+                        </div>
+                    </li>
+                    <li>  
+                        <div>
+                            <input type="checkbox" id="bricolage" name="bricolage"  />
+                            <label for="bricolage">Bricolage</label>
+                        </div>
+                    </li>
+                    <li>  
+                        <div>
+                            <input type="checkbox" id="sport" name="sport"  />
+                            <label for="sport">Sport</label>
+                        </div>
+                    </li>
+                    <li>  
+                        <div>
+                            <input type="checkbox" id="mutimedia" name="mutimedia"  />
+                            <label for="mutimedia">Multimedia</label>
+                        </div>
+                    </li>
+                    <li>  
+                        <div>
+                            <input type="checkbox" id="mutimedia" name="mutimedia"  />
+                            <label for="mutimedia">Multimedia</label>
+                        </div>
+                    </li>
+                     
+                </ul>
+            </div>
+            
+        </div>
+        <div class="md:w-5/6"> 
+            <!-- ********   contenu de page ********** --> 
+            <div class="content-page md:mx-2 bg-gray-200">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-2 ">   
+                     <!-- une ligne -->
+                     <div class=" product-item hover:border-4 hover:p-4 hover:shadow-lg hover:shadow-orange-500 rounded-[20px] shadow-md lg:mt-2 pb-3 bg-white p-2 my-2 ">
+                        <img src="images/images10.jpg" alt="Image 1" class=" product-img w-full object-contain h-auto mb-2">
+                        <div class="grid text-sm md:text-md lg:text-lg rounded-b filtre-application">                        
+                            <span class="text-orange-500">8$</span>
+                            <span class="">vendu avec un cadeau de - de 5euro</span>
+                            <span class="text-green-600 my-2"> <i class="fa fa-cart-shopping"></i> Livraison offerte</span>
+                            <p class="md:mt-2">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            <a href="product.html" class="bg-orange-500 hover:bg-gray-900 text-white px-2 rounded py-1 mt-2">
+                                <i class="fa fa-cart-shopping"></i> Plus de Details
+                            </a>
+                        </div>
+                    </div>  
+                    <div class=" product-item hover:border-4 hover:p-4 hover:shadow-lg hover:shadow-orange-500 rounded-[20px] shadow-md lg:mt-2 pb-3 bg-white p-2 my-2 ">
+                        <img src="images/images6.jpg" alt="Image 1" class=" product-img w-full object-contain h-auto mb-2">
+                        <div class="grid text-sm md:text-md lg:text-lg rounded-b filtre-application">                        
+                            <span class="text-orange-500">8$</span>
+                            <span class="">vendu avec un cadeau de - de 5euro</span>
+                            <span class="text-green-600 my-2"> <i class="fa fa-cart-shopping"></i> Livraison offerte</span>
+                            <p class="md:mt-2">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            <a href="product.html" class="bg-orange-500 hover:bg-gray-900 text-white px-2 rounded py-1 mt-2">
+                                <i class="fa fa-cart-shopping"></i> Plus de Details
+                            </a>
+                        </div>
+                    </div>    
+                    <div class=" product-item hover:border-4 hover:p-4 hover:shadow-lg hover:shadow-orange-500 rounded-[20px] shadow-md lg:mt-2 pb-3 bg-white p-2 my-2 ">
+                        <img src="images/images8.jpg" alt="Image 1" class=" product-img w-full object-contain h-auto mb-2">
+                        <div class="grid text-sm md:text-md lg:text-lg rounded-b filtre-application">                        
+                            <span class="text-orange-500">8$</span>
+                            <span class="">vendu avec un cadeau de - de 5euro</span>
+                            <span class="text-green-600 my-2"> <i class="fa fa-cart-shopping"></i> Livraison offerte</span>
+                            <p class="md:mt-2">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            <a href="product.html" class="bg-orange-500 hover:bg-gray-900 text-white px-2 rounded py-1 mt-2">
+                                <i class="fa fa-cart-shopping"></i> Plus de Details
+                            </a>
+                        </div>
+                    </div>    
+                    <div class=" product-item hover:border-4 hover:p-4 hover:shadow-lg hover:shadow-orange-500 rounded-[20px] shadow-md lg:mt-2 pb-3 bg-white p-2 my-2 ">
+                        <img src="images/images7.jpg" alt="Image 1" class=" product-img w-full object-contain h-auto mb-2">
+                        <div class="grid text-sm md:text-md lg:text-lg rounded-b filtre-application">                        
+                            <span class="text-orange-500">8$</span>
+                            <span class="">vendu avec un cadeau de - de 5euro</span>
+                            <span class="text-green-600 my-2"> <i class="fa fa-cart-shopping"></i> Livraison offerte</span>
+                            <p class="md:mt-2">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            <a href="product.html" class="bg-orange-500 hover:bg-gray-900 text-white px-2 rounded py-1 mt-2">
+                                <i class="fa fa-cart-shopping"></i> Plus de Details
+                            </a>
+                        </div>
+                    </div>  
+                    <div class=" product-item hover:border-4 hover:p-4 hover:shadow-lg hover:shadow-orange-500 rounded-[20px] shadow-md lg:mt-2 pb-3 bg-white p-2 my-2 ">
+                        <img src="images/images4.jpg" alt="Image 1" class=" product-img w-full object-contain h-auto mb-2">
+                        <div class="grid text-sm md:text-md lg:text-lg rounded-b filtre-application">                        
+                            <span class="text-orange-500">8$</span>
+                            <span class="">vendu avec un cadeau de - de 5euro</span>
+                            <span class="text-green-600 my-2"> <i class="fa fa-cart-shopping"></i> Livraison offerte</span>
+                            <p class="md:mt-2">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            <a href="#" class="bg-orange-500 hover:bg-gray-900 text-white px-2 rounded py-1 mt-2">
+                                <i class="fa fa-cart-shopping"></i> Plus de Details
+                            </a>
+                        </div>
+                    </div>  
+                <!--fin   ligne-->                                                                                              
+                </div>
+               
+            </div>
+            <!-- ********   contenu de page ********** --> 
+        </div>
+    </section>
+
+        <section class="modal">
+                  <!-- Modal (caché par défaut) -->
+        
+         <div id="myModal" class="modal hidden fixed inset-0 overflow-y-auto ">
+            <div class="flex items-center justify-center min-h-screen">
+                <!-- Arrière-plan semi-transparent -->
+                <div class="modal-overlay fixed inset-0 bg-black opacity-80"></div>
+                <!-- Modal avec position top: 100px -->
+                <div class="modal-content bg-white m-8 md:w-1/2 hover:cursor-pointer rounded shadow-lg absolute top-5 ">
+                    <span id="closeModalButton" class="absolute top-0 right-0 m-4 text-gray-600 cursor-pointer mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.293 6.293a1 1 0 011.414 0L12 10.586l4.293-4.293a1 1 0 111.414 1.414L13.414 12l4.293 4.293a1 1 0 01-1.414 1.414L12 13.414l-4.293 4.293a1 1 0 01-1.414-1.414L10.586 12 6.293 7.707a1 1 0 010-1.414z" fill="currentColor"></path></svg>
+                    </span>
+                    
+                    <div class="grid grid-cols-1 mt-4">
+                        <div class="text-center md:text-left md:text-md mb-2 rounded-xl  border-1" id="declinaison_image_products">
+                            <img src="images/images1.jpg" class=" w-full h-64 object-contain px-8 " alt="images1">                             
+                                <ul  class="flex px-8  gap-4 mt-2 mx-auto" id="declinaison_image_products">
+                                    <li><img src="images/images1.jpg"  class="w-[80px] h-[50px] md:w-[100px] md:h-[80px] rounded-lg"  alt=""></li>
+                                    <li><img src="images/images10.jpg"  class="w-[80px] h-[50px] md:w-[100px] md:h-[80px] rounded-lg"  alt=""></li>
+                                    <li><img src="images/images9.jpg"  class="w-[80px] h-[50px] md:w-[100px] md:h-[80px] rounded-lg"  alt=""></li>
+                                    <li><img src="images/images6.jpg"  class="w-[80px] h-[50px] md:w-[100px] md:h-[80px] rounded-lg"  alt=""></li>
+                                </ul>
+                             <!-- Onglets -->
+                             <hr>
+                            <div class="flex m-2 gap-4">
+                                <button id="tab1" class="rounded-md md:px-2 bg-white text-blue-600 px-2 tab-button active">Onglet 1</button>
+                                <button id="tab2" class="rounded-md md:px-2 bg-white text-blue-600 px-2 tab-button">Livraison</button>
+                                <button id="tab3" class="rounded-md md:px-2 bg-white text-blue-600 px-2 tab-button">Retrait</button>
+                            </div>
+                            <hr>
+                             <!-- Contenu des onglets -->
+                            <div id="content1" class="tab-content">
+                                <span class="grid pl-4 text-left text-orange-500" >Categorie </span>
+                                <p class="grid p-4 text-left ">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+                                <div class="flex px-4 text-xl">
+                                    <div class="flex-1 text-left">20$</div>
+                                    <div class="flex-1 text-right">
+                                        <a href="product.html"><i class=" fa fa-cart-shopping text-orange-500"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="content2" class="tab-content hidden">
+                                <h2 class="text-2xl font-bold mb-4">Livraison Express</h2>
+                                <p>Ceci est le contenu de l'onglet 2.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus minus  
+                                </p>
+                            </div>
+
+                            <div id="content3" class="tab-content hidden">
+                                <h2 class="text-2xl font-bold mb-4"> Retirer A Cote De Chez Vous </h2>
+                                <p>Ceci est le contenu de l'onglet 3.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus minus  
+                                </p>
+                            </div>                                                       
+
+                        </div>
+                        <!-- <div class="relative   bg-gray-200">
+                            <div class="absolute left-4 bottom-2 bg-blue-600 text-white ">Voir Plus</div>
+                         </div> -->
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </section>
+       <!-- ************************************** -->
+       <!-- ********   end division de page ********** -->
+       <!-- ************************************** -->
+<script src="script.js"></script>
+</body>
+</html>

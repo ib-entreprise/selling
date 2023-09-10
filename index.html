@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prix-bas</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <header class=" bg-gray-200 text-black w-full">
+     <div class="grid grid-cols-2">
+        <img src="images/logo/logo_color.png" class="text-left rounded-full mx-8  " alt="">
+        <p class="text-right mr-4 text-[18px] font-semibold text-right md:hidden">Tout vos besoins a Petit prix dans la
+            metropole lilloise
+        </p>
+        <div class="text-right hidden md:block mr-4">
+            <ul class="flex gap-8 text-[15px] ml-4 md:text-[15px] mt-2 ">
+                <li class="space-between"><a href="#">
+                        <span class="bg-orange-500 text-white rounded-full mx-2 px-3 p-2">1</span> Choix et Commandes
+                        des articles </a>
+                </li>
+                <li class="space-between"><a href="#">
+                        <span class="bg-orange-500 text-white rounded-full mx-2 px-3 p-2">2</span> Retrait
+                        des articles </a>
+                </li>
+                <li class="space-between"><a href="#">
+                        <span class="bg-orange-500 text-white rounded-full mx-2 px-3 p-2">3</span> Paiement
+                        des articles </a>
+                </li>
+
+            </ul>
+        </div>
+     </div>
+    </header>
+    <nav class="bg-gray-900 text-white  lg:text-[20px]">
+        <div class="grid grid-cols-2 lg:mx-[100px] p-4">
+            <div class="text-left hidden md:block">
+                <ul class="flex ml-2 text-black gap-4 ">
+                    <li class="w-1/4">
+                        <select name="categorie" id="" class="rounded-lg md:p-2 lg:p-3  ">
+                            <option value="">Cuisine</option>
+                            <option value="">bricolage</option>
+                            <option value="">Sport</option>
+                        </select>
+                    </li>
+                    <li> <input class="rounded w-2/4 w-full p-2" type="text" placeholder="Quel Article ?"> </li>
+                    <li class="w-1/4 "><button class="bg-red-500 text-white p-2 rounded-lg w-full">Rechercher</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-right md:mt-2">
+                <div class="grid grid-cols-1 text-center">
+                    <ul class="flex gap-8 md:text-[15px] ml-4 lg:text-[25px] ">
+                        <li class=""><a href="#"> Catalogue</a></li>
+                        <li class=""><a href="#"> Question Frequentes</a></li>
+                        <li class=""><i class="fa fa-user text-white text-[25px]"></i></li>
+                        <li class=""><i class="fa fa-cart-shopping text-orange-500 text-[25px] lg:text-[35px]"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="bestSel"></section>
+
+    <section id="offreByCat"></section>
+
+    <section id="offreByCat" class="mt-20 md:mx-[100px] mx-10">
+        <div class="grid">
+            <h1 class="text-[25px] text-red-400">Decouvrez Nos Offres Par Categorie </h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-6   gap-4 md:text-[25px] lg:text-[35px] text-[54px]">
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">bricolage</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">cuisine</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">mutimedia</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">sport</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">Decor</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">Couture</span>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-6 md:mt-4  gap-4 md:text-[25px] lg:text-[35px] text-[54px]">
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">bricolage</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">cuisine</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">mutimedia</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">sport</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">Decor</span>
+            </div>
+            <div class="grid">
+                <div class="bricolage bg-gray-900 text-white rounded-lg m-4 grid">
+                    <a href="bricolage.html" class=" text-center"><i class="fa-solid fa-screwdriver-wrench "></i></a>
+                </div>
+                <span class="text-[20px] md:text-[16px] lg:text-[20px] text-center">Couture</span>
+            </div>
+        </div>
+
+    </section>
+    <section id="choice" class="mt-20 md:mx-[100px] mx-10">
+        <div class="grid">
+            <h1 class="text-[25px] text-red-400 mb-4">Faites Le Choix Du Prix-Bas </h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 gap-4">
+            <div class="grid">
+                <img class=" w-full md:w-full h-64 grid-cols-1 rounded-md objet-cover"
+                    src="images/rosebox-BFdSCxmqvYc-unsplash.jpg" alt="image1">
+                <h2 class=" grid-cols-1 text-gray-900 text-[25px] text-center"> <a href="#"> Je Choisi</a></h2>
+            </div>
+            <div class="grid">
+                <img class=" w-full md:w-64 h-64 grid-cols-1 rounded-md objet-cover"
+                    src="images/alex-mecl-44al1GlFVxo-unsplash.jpg" alt="image1">
+                <h2 class=" grid-cols-1 text-gray-900 text-[25px] text-center"> <a href="#"> Je Choisi</a></h2>
+            </div>
+            <div class="grid">
+                <img class=" w-full md:w-64 h-64 grid-cols-1 rounded-md objet-cover"
+                    src="images/christin-hume-mfB1B1s4sMc-unsplash.jpg" alt="image1">
+                <h2 class=" grid-cols-1 text-gray-900 text-[25px] text-center"> <a href="#"> Je Choisi</a></h2>
+            </div>
+
+            <div class="grid">
+                <img class=" w-full md:w-64 h-64 grid-cols-1 rounded-md objet-cover"
+                    src="images/bench-accounting-MGaFENpDCsw-unsplash.jpg" alt="image1">
+                <h2 class=" grid-cols-1 text-gray-900 text-[25px] text-center"> <a href="#"> Je Choisi</a></h2>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white mt-8 ">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4  mx-10 md:mx-[100px] pb-8 ">
+            <div class="flex mt-4">
+                <i class=" w-1/4 text-[45px] md:hidden  fa fa-euro-sign text-orange-500 my-auto mx-auto "></i>
+                <div class="w-3/4 ">
+                    <h1 class="text-[25px] mt-4 mb-4">Article A Petit Prix</h1>
+                    <p class="text-[20px]">la majorite des produit est a 1euro</p>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <i class=" w-1/4 text-[45px] md:hidden   fa fa-dollar text-orange-500 my-auto mx-auto "></i>
+                <div class="w-3/4 ">
+                    <h1 class="text-[25px] mt-4 mb-4">Achat Sans Soucis</h1>
+                    <p class="text-[20px]">Chaque Commande Est Fournie mains a mains</p>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <i class=" w-1/4 text-[45px] md:hidden  fa fa-money-bill-1 text-orange-500 my-auto mx-auto "></i>
+                <div class="w-3/4 ">
+                    <h1 class="text-[25px] mt-4 mb-4">Paiement Securise</h1>
+                    <p class="text-[20px]">Payez En Toute Securite</p>
+                </div>
+            </div>
+            <div class="flex mt-4">
+                <i
+                    class=" w-1/4 text-[45px] md:hidden   fa fa-hands-holding-child text-orange-500 my-auto mx-auto "></i>
+                <div class="w-3/4 ">
+                    <h1 class="text-[25px] mt-4 mb-4">Livraison Express</h1>
+                    <p class="text-[20px]">Vous Etes Livres Plutot Que Prevu </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-1  mx-10 md:mx-[100px]">
+            <div class="grid ">
+                <ul class=" md:flex text-center  text-[25px] md:text-[20px] gap-8">
+                    <li class="hover:text-orange-500"><a href="index.html">Acceuil</a></li>
+                    <li class="hover:text-orange-500"><a href="products.html">Catalogue</a></li>
+                    <li class="hover:text-orange-500"><a href="products.html">Question Frequentes</a></li>
+                    <li class="hover:text-orange-500"><a href="products.html">Premiere Visite</a></li>
+                    <li class="hover:text-orange-500"><a href="products.html">Livraison / Retrait</a></li>
+                    <li class="hover:text-orange-500"><a href="products.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-10 md:mx-[100px] mt-8">
+
+            <div class="grid">
+                <ul class="flex  gap-8 mx-auto text-orange-500 text-[35px] ">
+                    <li><a href="#"><i class=" fa fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class=" fa fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class=" fa fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class=" fa fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class=" fa fa-brands fa-pinteres"></i></a></li>
+                </ul>
+            </div>
+            <p class="text-lg grid text-center ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas
+
+            </p>
+        </div>
+    </footer> 
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
